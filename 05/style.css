@@ -1,0 +1,52 @@
+*{
+    text-decoration: underline;
+}
+/* h3{
+    color: rgb(136, 50, 50);
+    background-color: black;
+} */
+p{
+    background-color: blueviolet;
+}
+h3,h4{
+    color: rgb(136, 50, 50);
+    background-color: black; 
+}
+/*DRY*/
+
+h3,h4{
+    color: rgb(64, 50, 136);
+}
+span{
+color: blue;
+}
+p span{
+    color: aqua;
+}
+header nav a{
+    background-color: chartreuse;
+}
+#bottom{
+    background-color: blue;
+    color: darkgray;
+}
+.text-card{
+    background-color: brown;
+    color: black;
+}
+.text-card big{
+    font-size: 20px;
+}
+
+ul li:first-child{
+    background-color: rgb(25, 111, 43);
+}
+ul li:last-child{
+    background-color: black;
+}
+ul li:nth-child(22){
+    background-color: chocolate;
+}
+.btn-buy{
+    background-color: darkgoldenrod;
+}
