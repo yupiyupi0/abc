@@ -1,11 +1,15 @@
 *{
     box-sizing: border-box;
 }
-*{margin: 0;}
+*{
+    margin: 0;
+}
 body{
     background-color: #F6F5F5;
-    font-family: 'inter' sans-serif;
-
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .conteiner{
     width: 360px;
@@ -36,14 +40,14 @@ button{
     color: #C4C4C4;
 }
 .menu-position{
-border: 1px solid black;
-display: inline-block;
-border: 0;
-text-align: center;
-width: 74px;
-height: 101px;
-border-radius: 12px;
-font-family: 'inter', sans-serif;
+    border: 1px solid black;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    width: 74px;
+    height: 101px;
+    border-radius: 12px;
+    font-family: 'inter', serif;
 }
 .menu-position:hover .background-img{
     background-color: #EAE2B7;
@@ -58,6 +62,8 @@ input{
     border-radius: 12px;
     background-color: #EFEFEF;
     border: 0;
+    font-family: 'Inter' serif;
+    font-weight: 400;
     font-size: 12px;
     color: #999999;
 }
@@ -73,7 +79,7 @@ h2{
     font-family: 'inter', sans-serif;
     font-weight: 500;
     font-size: 20px; 
-    color: black; 
+    color: #003049; 
     margin-top: 32px;
 }
 .burger1{
@@ -87,13 +93,13 @@ h2{
     box-shadow: 0px 0px 4px 0px #E5E5E5;
 }
 .text-burger{
-
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
     color: #003049;
     width: 100%;
+    margin: 0 0 8px 0;
 }
 .buy{
 
@@ -102,10 +108,12 @@ h2{
     font-size: 14px;
     text-align: left;
     color: #D62828;
+    margin: 0;
 }
 .block{
-
     display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .img-1{
     width: 60px;
@@ -120,5 +128,4 @@ h2{
 .img-3{
     width: 70px;
     height: 60px;
-    left: 24px;
 }

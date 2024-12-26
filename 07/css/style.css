@@ -1,0 +1,26 @@
+*{
+    box-sizing:border-box;
+}
+/*@font-face {
+    font-family: my font;
+    src: url();
+    format
+    url
+    format 
+    costoms font
+}*/
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+}
+.conteiner{
+    width: 400px;
+    margin: 100px auto;
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    line-height: 1;
+}
