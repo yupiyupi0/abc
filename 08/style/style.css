@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 400px;
+    padding: 50px;
+    background-color: lawngreen;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    line-height: 2;
+    /* text-decoration: underline; */
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    /* border:none; */
+    border: 2px solid black;
+    background-color: transparent;
+}
+header{
+    background-color: orange;
+    padding: 50px;
+    text-align: center;
+    /* position: static; */
+    /* position: relative;
+    position: absolute;
+    position: fixed; */
+    position: sticky;
+    top: 0;
+    /* top:;
+    bottom: ;
+    left: ;
+    right: ; */
+    /* z-index: ; */
+    z-index: 3;
+}
+.position-fixed{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 40px 0;
+    background-color: red;
+    border-radius: 40px;
+    position: fixed;
+    /* top: 40px;
+    left: 200px; */
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+}
+.position-abs{
+    padding: 50px;
+    background-color: darkgreen;
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    /* top: 0;
+    bottom: 0; */
+    left: 60px;
+    z-index: 2;
+}
+.position-relative{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    background-color: gray;
+    /* bottom: 100px; */
+}
+
+.position-abs.second{
+    z-index: 1;
+    background-color: brown;
+    top: 150px;
+    left: 150px;
+}
+.position-abs.third{
+    z-index: 3;
+    background-color: skyblue;
+    top: 240px;
+    left: 270px;
+}
