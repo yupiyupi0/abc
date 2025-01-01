@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+.img-container{
+    width: 600px;
+    /* height: 200px; */
+    border: 2px solid red;
+    border-radius: 50px;
+    /* overflow: hidden; */
+    position: relative;
+}
+div>img{
+    width: 200px;
+    height: auto;
+    /* display: block; */
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin: 30px;
+}
+.img-container p{
+    /* display: inline-block; */
+    /* width: 300px; */
+}
+span{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.text-container{
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+    border: 2px solid red;
+    /* overflow: auto; */
+    /* overflow: scroll; */
+    overflow-y: auto;
+    overflow-x: auto;
+}
+h1::after{
+    content: "!!!!";
+    color: blue;
+    font-size: 30px;
+}
+h1::before{
+    content: "$$$";
+    color: blue;
+    font-size: 30px;
+}
+
+h2::after{
+    content: "";
+    display: inline-block;
+    background-color: blue;
+    width: 100px;
+    height: 10px;
+}
+h2::before{
+    content: "";
+    display: inline-block;
+    background-color: yellow;
+    width: 100px;
+    height: 10px;
+}
+.float-content{
+    border: 2px solid black;
+    background-color: green;
+    /* overflow: hidden; */
+}
+.float-item{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+    /* clear: both; */
+}
+.float-item:nth-child(2){
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
