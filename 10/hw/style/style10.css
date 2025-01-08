@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /*width: 1440px;*/
+    font-size: 16px;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 45px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+}
+body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 118px;
+    top: 0;
+    bottom: 0;
+    margin-left: 13%;
+    background-color: #F9F9F9;
+    z-index: -1;
+}
+.conteiner{
+    width: 82%;
+    margin: 0 auto;
+}
+header{
+    padding: 55px 0;
+}
+header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo:hover{
+    opacity: 0.8;
+}
+nav a{
+    display: inline-block;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    margin-right: 35px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+nav a::after{
+    display: none;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #F2994A;
+    position: absolute;
+    margin: 0 50%;
+    bottom: -16px;
+}
+nav a.active::after,
+nav a:hover::after{
+    display: block;
+}
+.search-block input{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: #000;
+    border: none;
+    padding: 0 16px;
+}
+.search-block button{
+    background-color: #fff;
+    border: none;
+}
+.search-block input:focus-visible{
+    outline: none;
+}
+.content{
+    padding: 110px 0 50px;
+}
+.content .conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+.imege-big{
+    width: 35%;
+}
+.imege-big img{
+    width: 100%;
+}
+.text-conteiner{
+    width: 50%;
+}
+.text-block{
+    padding-right: 180px;
+    border-right: 1px solid #333;
+    margin-bottom: 32px;
+}
+.text-block h2{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #F2994A;
+    margin-bottom: 10px;
+}
+.text-block h2::after{
+    content: "+";
+    position: absolute;
+    color: #3F9AB7;
+    right: 0;
+}
+.text-block h1{
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 1px;  
+    margin-bottom: 70px;
+}
+.text-block p{
+    font-family: 'Roboto' sans-serif;
+    position: relative;
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+.text-block p::before{
+    width: 188px;
+    content: "";
+    display: block;
+    background: #F2994A;
+    height: 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.media{
+    display: flex;
+    align-items: center;
+}
+.media button{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #3F9AB7;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.media button:hover{
+    background-color: #F2994A;
+}
+.media span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+.link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 100%;
+    position: relative;
+
+    text-align: center;
+    right: -16px;
+    margin-bottom: 8px;
+}
+.link-img-hover{
+    display: none;
+}
+.link a:hover{
+    background-color: #F2994A;
+}
+.link a:hover .link-img-hover{
+    display: block;
+}
+.link a:hover .link-img{
+    display: none;
+}
+.client{
+    background-color: #3F9AB7;
+    display: flex;
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+}
+.client-image{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.client-image:nth-child(2){
+    left: -10px;
+}
+.client-image:nth-child(3){
+    left: -20px;
+}
+.client-info{
+    color: #fff;
+}
+.client-info strong{
+    font-size: 24px;
+    font-weight: 700;
+}
+.client-info span{
+    font-size: 20px;
+    font-weight: 400;
+}
